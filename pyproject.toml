@@ -1,13 +1,17 @@
 [project]
-name = "agentic-ai-course"
+name = "deeplearning-ai-courses"
 version = "0.1.0"
-description = "Monorepo for Agentic AI course labs"
+description = "Monorepo for DeepLearning.AI courses"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.10"
 dependencies = []
 
 [tool.uv.workspace]
-members = ["labs/*"]
+members = [
+    "courses/*",
+    "courses/*/module-*",
+    "shared/*",
+]
 
 [build-system]
 requires = ["hatchling"]

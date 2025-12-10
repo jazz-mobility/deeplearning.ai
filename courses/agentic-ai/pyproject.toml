@@ -1,0 +1,53 @@
+[project]
+name = "agentic-ai"
+version = "0.1.0"
+description = "DeepLearning.AI - Agentic AI Course"
+requires-python = ">=3.10"
+dependencies = [
+    # === Agent + LLM Tools ===
+    "aisuite==0.1.11",
+    "anthropic",
+    "docstring-parser",
+    "markdown",
+    "mistralai",
+    "openai",
+    "qrcode",
+    "tavily-python>=0.7.12",
+    "textstat",
+    "vertexai",
+
+    # === Web Framework + API ===
+    "fastapi",
+    "pydantic",
+    "pydantic[email]",
+    "python-dotenv",
+    "python-multipart",
+    "requests",
+    "sqlalchemy",
+    "uvicorn",
+
+    # === Notebook Experience ===
+    "ipywidgets",
+    "jupyter_server",
+    "nbclassic",
+    "notebook",
+    "ipykernel",
+
+    # === Data Analysis / Display ===
+    "duckdb",
+    "matplotlib",
+    "pandas",
+    "seaborn",
+    "tabulate",
+    "tinydb",
+
+    # === Machine Learning / NLP ===
+    "jinja2",
+    "psycopg2-binary",
+    "scikit-learn",
+    "wikipedia",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
