@@ -1,0 +1,14 @@
+[project]
+name = "agentic-ai-course"
+version = "0.1.0"
+description = "Monorepo for Agentic AI course labs"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.uv.workspace]
+members = ["labs/*"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
