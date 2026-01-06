@@ -1,0 +1,12 @@
+[project]
+name = "agentic-ai-module-05"
+version = "0.1.0"
+description = "Module 5: Multi-Agent Design Pattern"
+requires-python = ">=3.10"
+dependencies = [
+    "agentic-ai",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
