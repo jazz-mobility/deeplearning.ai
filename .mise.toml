@@ -1,4 +1,15 @@
 [tools]
 python = "3.11"
 uv = "latest"
-node = "18"
+
+[tasks.install]
+description = "Install all dependencies"
+run = "uv sync"
+
+[tasks.lab]
+description = "Run Jupyter notebook for current module"
+run = "uv run jupyter notebook"
+
+[tasks.m2]
+description = "Open Module 2 graded lab"
+run = "uv run jupyter notebook courses/agentic-ai/module-02/m2_graded_lab_reflection_research_agent.ipynb"

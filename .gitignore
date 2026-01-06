@@ -104,6 +104,7 @@ celerybeat.pid
 
 # Environments
 .env
+.mise.local.toml
 .venv
 env/
 venv/
