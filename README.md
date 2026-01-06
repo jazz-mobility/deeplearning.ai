@@ -8,8 +8,9 @@ This monorepo contains coursework, labs, and projects from various DeepLearning.
 agentic-ai/
 ├── courses/              # Individual courses
 │   └── agentic-ai/      # Agentic AI course
-│       ├── module-01/   # Course modules
-│       └── ...
+│       ├── module-01/   # Introduction to Agentic Workflows
+│       ├── module-02/   # Reflection Design Pattern
+│       └── module-03/   # Tool Use Design Pattern
 ├── shared/              # Shared utilities across courses
 │   └── common/         # Common helper functions
 └── scripts/            # Setup and utility scripts
@@ -55,12 +56,29 @@ eval "$(mise activate bash)"  # or zsh, fish, etc.
 
 ### Agentic AI
 
-**Status**: In Progress (Module 1 completed)
+**Status**: In Progress
 
 Learn about agentic AI systems with iterative, multi-step workflows.
 
 - [Course Link](https://learn.deeplearning.ai/courses/agentic-ai)
 - [Course README](courses/agentic-ai/README.md)
+
+#### Modules
+
+| Module | Topic | Status |
+|--------|-------|--------|
+| 01 | Introduction to Agentic Workflows | Completed |
+| 02 | Reflection Design Pattern | Completed |
+| 03 | Tool Use Design Pattern | Completed |
+
+#### Running Labs
+
+```bash
+mise run install   # Install dependencies
+mise run m2        # Module 2 - Reflection lab
+mise run m3        # Module 3 - Tool Use lab
+mise run lab       # Open Jupyter browser
+```
 
 ## Development
 
@@ -100,11 +118,21 @@ mkdir -p courses/agentic-ai/module-02/{helpers,data}
 ### Working with Jupyter Notebooks
 
 ```bash
-# Start Jupyter
-jupyter notebook
+# Start Jupyter via mise
+mise run lab
 
-# Or use Jupyter Lab
-jupyter lab
+# Or directly
+uv run jupyter notebook
+```
+
+### Environment Variables
+
+Create `.mise.local.toml` (gitignored) for API keys:
+
+```toml
+[env]
+OPENAI_API_KEY = "your-key"
+TAVILY_API_KEY = "your-key"
 ```
 
 ## Tools
