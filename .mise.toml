@@ -13,3 +13,7 @@ run = "uv run jupyter notebook"
 [tasks.m2]
 description = "Open Module 2 graded lab"
 run = "uv run jupyter notebook courses/agentic-ai/module-02/m2_graded_lab_reflection_research_agent.ipynb"
+
+[tasks.m3]
+description = "Open Module 3 graded lab"
+run = "uv run jupyter notebook courses/agentic-ai/module-03/m3_graded_lab_tool_use_reflective_agents.ipynb"

@@ -14,6 +14,7 @@ members = [
     "agentic-ai",
     "agentic-ai-module-01",
     "agentic-ai-module-02",
+    "agentic-ai-module-03",
     "deeplearning-ai-common",
 ]
 
@@ -109,6 +110,17 @@ requires-dist = [{ name = "agentic-ai" }]
 name = "agentic-ai-module-02"
 version = "0.1.0"
 source = { editable = "courses/agentic-ai/module-02" }
+dependencies = [
+    { name = "agentic-ai" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "agentic-ai" }]
+
+[[package]]
+name = "agentic-ai-module-03"
+version = "0.1.0"
+source = { editable = "courses/agentic-ai/module-03" }
 dependencies = [
     { name = "agentic-ai" },
 ]
