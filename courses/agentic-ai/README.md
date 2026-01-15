@@ -15,6 +15,7 @@ Learn to build agentic AI systems with iterative, multi-step workflows that can 
 mise run install   # Install dependencies
 mise run m2        # Open Module 2 lab
 mise run m3        # Open Module 3 lab
+mise run m5        # Open Module 5 lab
 ```
 
 ---
@@ -211,6 +212,5 @@ TAVILY_API_KEY = "tvly-..."
 - [x] Module 1: Introduction to Agentic Workflows
 - [x] Module 2: Reflection Design Pattern
 - [x] Module 3: Tool Use Design Pattern
-- [ ] Module 4: Planning Design Pattern
-- [ ] Module 5: Multi-Agent Design Pattern
+- [x] Module 5: Multi-Agent Workflows (Agentic Workflows)
 - [ ] Course Completion

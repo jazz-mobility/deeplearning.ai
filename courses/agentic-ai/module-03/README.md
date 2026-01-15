@@ -331,4 +331,4 @@ TAVILY_API_KEY = "tvly-..."
 
 ## Next Steps
 
-Continue to **Module 4: Planning Design Pattern** to learn how agents can break down complex tasks and create execution plans.
+Continue to [Module 5: Multi-Agent Workflows](../module-05/README.md) to learn how multiple agents collaborate to complete complex research tasks.

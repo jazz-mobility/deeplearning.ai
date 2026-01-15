@@ -10,7 +10,8 @@ agentic-ai/
 │   └── agentic-ai/      # Agentic AI course
 │       ├── module-01/   # Introduction to Agentic Workflows
 │       ├── module-02/   # Reflection Design Pattern
-│       └── module-03/   # Tool Use Design Pattern
+│       ├── module-03/   # Tool Use Design Pattern
+│       └── module-05/   # Multi-Agent Workflows
 ├── shared/              # Shared utilities across courses
 │   └── common/         # Common helper functions
 └── scripts/            # Setup and utility scripts
@@ -70,6 +71,7 @@ Learn about agentic AI systems with iterative, multi-step workflows.
 | 01 | Introduction to Agentic Workflows | Completed |
 | 02 | Reflection Design Pattern | Completed |
 | 03 | Tool Use Design Pattern | Completed |
+| 05 | Multi-Agent Workflows | Completed |
 
 #### Running Labs
 
@@ -77,6 +79,7 @@ Learn about agentic AI systems with iterative, multi-step workflows.
 mise run install   # Install dependencies
 mise run m2        # Module 2 - Reflection lab
 mise run m3        # Module 3 - Tool Use lab
+mise run m5        # Module 5 - Multi-Agent Workflows lab
 mise run lab       # Open Jupyter browser
 ```
 
